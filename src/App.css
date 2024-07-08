@@ -1,0 +1,59 @@
+/* src/App.css */
+
+.app-container {
+  text-align: left; /* Align text to the left */
+  padding-left: 20px; /* Add some padding to the left */
+}
+
+.tabs {
+  display: flex;
+  justify-content: flex-start; /* Align tabs to the left */
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ccc; /* Add bottom border to the tabs container */
+}
+
+.tabs .tab {
+  margin-right: 20px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.tabs .tab.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000; /* Underline color for active tab */
+}
+
+.tabs .tab:hover {
+  color: #007BFF; /* Change color on hover */
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column; /* Stack the content vertically */
+  padding-left: 20px; /* Add some padding to the left */
+}
+
+ul {
+  list-style-type: none; /* Removes bullet points */
+  padding: 0; /* Removes default padding */
+}
+
+li {
+  margin: 10px 0; /* Adds some space between list items */
+}
+
+form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Add some space below the form */
+}
+
+input[type="text"] {
+  margin-right: 10px; /* Add space between the input and the button */
+}
